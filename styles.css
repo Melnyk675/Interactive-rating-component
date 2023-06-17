@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Overpass', sans-serif;  
     background-color: #000000;
@@ -35,6 +33,11 @@ button {
     height: 416px;
     margin: 95px auto;
     padding-top: 32px;
+  @media screen and (max-width: 480px) {
+    width: 327px;
+    height: 360px;
+    padding-top: 24px;
+    }
 }
 
 .star {
@@ -47,15 +50,26 @@ button {
     border-radius: 50%;
     margin-left: 32px;
     margin-bottom: 30px;
+  @media screen and (max-width: 480px) {
+    width: 40px;
+    height: 40px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+  }
 }
 
-.question__title {
+.rating__title {
     font-style: normal;
     font-size: 28px;
     line-height: 35px;
     color: #FFFFFF;
     padding-left: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
+@media screen and (max-width: 480px) {
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 24px;
+}
 }
 
 .text {
@@ -64,16 +78,25 @@ button {
     color: #969FAD;
     padding-left: 32px;
     padding-right: 40px;
+    font-size: 14px;
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+    line-height: 22px; 
+    padding-left: 24px;
+    padding-right: 24px;
+    }
   }
-
 
 .rating {
     list-style: none;
-    padding-left: 32px;
+    padding: 24px 39px 32px 32px;
     display: flex;
     gap: 21px;
-    margin: 24px 0;
     border-width: 0;
+  @media screen and (max-width: 480px) {
+    padding-left: 24px;
+    gap: 17px;
+  }
   }
   
   .rating__number {
@@ -93,13 +116,19 @@ button {
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+  @media screen and (max-width: 480px) {
+    width: 42px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.175px;
+  }
     &:checked {
         color: #FFFFFF;
         background: #FC7614;
     }
-}
- 
+  }
+
 .rating__number:hover,
 .rating__number:focus {
     color: #FFFFFF;
@@ -135,6 +164,10 @@ input[type='radio'] {
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 480px) {
+    width: 279px;
+    height: 45px;
+  }
  }
 
  .form__btn:hover,
